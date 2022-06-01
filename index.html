@@ -1,0 +1,164 @@
+<html>
+
+<head>
+  <title>Unified Theory</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="alt.ico" />
+  <script>
+
+    initBlorbos = (blorbos) => {
+        const sources = {
+          solemn: 'http://farragofiction.com/TwoGayJokes/Stories/MurderGameIcons/thesolemn.png',
+          twin2: 'http://farragofiction.com/TwoGayJokes/Stories/MurderGameIcons/thetwins2.png',
+          _: 'http://farragofiction.com/TwoGayJokes/Stories/MurderGameIcons/_.png',
+          twin1: 'http://farragofiction.com/TwoGayJokes/Stories/MurderGameIcons/thetwins1.png',
+          reflection: 'http://farragofiction.com/TwoGayJokes/Stories/MurderGameIcons/thereflection.png',
+          match: 'http://farragofiction.com/TwoGayJokes/Stories/MurderGameIcons/thematch.png',
+          shot: 'http://farragofiction.com/TwoGayJokes/Stories/MurderGameIcons/theshot.png',
+          end: 'http://farragofiction.com/TwoGayJokes/Stories/MurderGameIcons/theend.png',
+          k: 'http://farragofiction.com/TwoGayJokes/Stories/MurderGameIcons/k.png', //doesn't deserve a title, bastard man
+        }
+        const ele = document.querySelector("#cast");
+        if(!ele){
+          console.error("JR NOTE: cannot find cast section. Did you REALLY mean to call this?");
+          return;
+        }
+
+        for(let blorbo of blorbos){
+          const img = document.createElement("img");
+          img.className = "blorbo";
+          img.src = sources[blorbo];
+          ele.append(img);
+        }
+        //stress test
+        /*
+        for(let source of Object.values(sources)){
+          const img = document.createElement("img");
+          img.className = "blorbo";
+          img.src = source;
+          ele.append(img);
+        }*/
+    }
+
+    window.onload = () => {
+      initBlorbos(["_","match"])
+    }
+
+    window.onclick = () => {
+      document.querySelector("#muzak").play();
+      document.querySelector("#story").style.display = "block";
+      document.querySelector("#euphoria").style.display = "none";
+
+    }
+  </script>
+</head>
+
+
+<body>
+
+  <audio id="muzak">
+    <source src="http://farragofiction.com/CodexOfRuin/MallMusicMuzakMallOf1974/Mall Music Muzak - Mall Of 1974 - 09 Impulse Purchase (Part 1).mp3" type="audio/mpeg">
+    If you're reading this, audio isn't supported.
+  </audio>
+  <img src="dreamstime_s_80405843.jpg" id="fake-background"></div>
+
+  <div id="container">
+    <button id="euphoria">Click To Experience Obsession</button>
+
+    <div id="story">
+      <p>&ldquo;So tell me, R5.&rdquo; They say it lightly; the &lsquo;r&rsquo; is soft on their tongue, loaded with cautious curiosity. &ldquo;What are we staring at?&rdquo;</p>
+      <p><br></p>
+      <p>&ldquo;It&rsquo;s the Unified Theory. The reason the world is like this. The reason we should&hellip;&rdquo; Her index and middle fingers twitch somewhat, holding a fictitious cigarette. The clean air sits heavy on her lungs. &ldquo;Let it all die.&rdquo;</p>
+      <p><br></p>
+      <p>&ldquo;A bold scientific proclamation,&rdquo; they utter. &ldquo;Although not the first of its kind.&rdquo;</p>
+      <p><br></p>
+      <p>There&rsquo;s not a trace of humor in their voice. For them, it is merely a statement of the facts presented. Nothing more, nothing less.</p>
+      <p><br></p>
+      <p>&ldquo;I mean, I know that. It&rsquo;s not about&nbsp;us&nbsp;getting access to a better world, though.&rdquo; She crosses her arms. &ldquo;It&rsquo;s about ending this one. That&rsquo;s the whole problem with end of the world theories, they promise you an out. There&rsquo;s no out here. It&rsquo;s more&hellip; a sacrifice. You&rsquo;re giving yourself up for a different future.&rdquo;</p>
+      <p><br></p>
+      <p>&ldquo;Fascinating.&rdquo; Vik groans under their breath as they hunch forward on the sofa, propping their arms over their lap. &ldquo;Okay, let&rsquo;s see, then. Tell me about this &lsquo;Unified Theory&rsquo; of yours.&rdquo;</p>
+      <p><br></p>
+      <p>There&rsquo;s a shine to her eyes. Beaming, even. It&rsquo;s the light you see in children&rsquo;s eyes when asked about their favorite dinosaur, except instead of a t-rex, it&rsquo;s the apocalypse. Despite it, she fixes herself up in place, as if it&rsquo;ll somehow hide her excitement.&nbsp;</p>
+      <p><br></p>
+      <p>It doesn&rsquo;t.</p>
+      <p><br></p>
+      <p>&ldquo;Oh. Alright. Cool cool cool.&rdquo; She skitters over to her wall, pointing to its rightmost edge. &ldquo;So, let&rsquo;s start with the basics: the universe is the shape of a baby echidna Like-- a literal baby echidna, with no quills and its disgusting meat body, as illustrated here,&rdquo; she says, pointing to a picture of said animal. Its folds are not cute to look at. &ldquo;And that&rsquo;s wrong, for reasons you can imagine. The world isn&rsquo;t meant to exist in an echidna-like environment. This entire place was a mistake from the get-go, and we need to fix it.&rdquo;</p>
+      <p><br></p>
+      <p>&ldquo;Okay.&rdquo; The captain&rsquo;s face betrays little reaction-- as it always does. &ldquo;Do tell&hellip; &nbsp;how does one measure the shape of the universe?&rdquo;</p>
+      <p><br></p>
+      <p>She thinks on it for a moment, rolling the air-cigarrette between her fingers before she answers. &ldquo;You can&rsquo;t-- not normally, at least. It&rsquo;s too big to be measured. Thing is, some people&nbsp;can, because they have access to the World Code.&rdquo;</p>
+      <p><br></p>
+      <p>&ldquo;The World Code,&rdquo; they echo.&nbsp;</p>
+      <p><br></p>
+      <p>They don&rsquo;t sound impressed, but their statement is not one of judgment, either. She knows this. These words only look to bring attention to the idea. It is up to her to elaborate.</p>
+      <p><br></p>
+      <p>Ria coughs. &ldquo;See, now that you say it again, maybe I should&rsquo;ve led with that? Yeah. The World Code-- that&rsquo;s a thing. I named it. It&rsquo;s what makes up the universe, you see. The world is a simulation and only a handful of people know how it works-- and those are the building blocks.&rdquo;</p>
+      <p><br></p>
+      <p>&ldquo;Let&rsquo;s say I believe you.&rdquo; They do. They wouldn&rsquo;t still be listening otherwise. &ldquo;Can one learn this knowledge? This manipulation of the so-called &lsquo;world code&rsquo;?&rdquo;</p>
+      <p><br></p>
+      <p>&ldquo;I&rsquo;ve tried.&rdquo; She exhales with withheld fury. &ldquo;Believe me, I&apos;ve&nbsp;tried.&nbsp;None of the anomalies that&nbsp;do&nbsp;are exactly&nbsp;cool&nbsp;with people.&rdquo;</p>
+      <p><br></p>
+      <p>&ldquo;And these anomalies are?&rdquo;</p>
+      <p><br></p>
+      <p>&ldquo;That I&rsquo;ve confirmed? The one with the flower in her eye. The CEO of the world. Gun boy.&rdquo;&nbsp;</p>
+      <p><br></p>
+      <p>&ldquo;Gun boy?&rdquo;</p>
+      <p><br></p>
+      <p>&ldquo;The zombie-looking one. He told me all about it, but he won&rsquo;t do anything because that&rsquo;d be &lsquo;ruining the isekai&rsquo;.&rdquo;&nbsp;</p>
+      <p><br></p>
+      <p>&ldquo;Ah. Parker.&rdquo; they say, matter-of-factly. &ldquo;Go on.&rdquo;</p>
+      <p><br></p>
+      <p>&ldquo;Right. So, the world. Because. it&rsquo;s a simulation, that means that it&rsquo;s&hellip; malleable. Not that it wasn&rsquo;t before, but this is beyond atoms; it&rsquo;s the very structure of reality at your fingertips. So the anomalies before us designed this world to suit their needs, built a little playground for themselves, and closed the door-- that&rsquo;s why we loop, and why it ends in the year 2022. Whatever is after is something they don&rsquo;t want to see.&rdquo;</p>
+      <p><br></p>
+      <p>&ldquo;Worse yet, going back to the echidna,&rdquo; she shudders at the word, &ldquo;the universe itself is wrong. How do we know that? Look no further than&nbsp;the&nbsp;god of loops and destruction, of course. Peewee Cassan. Either he&rsquo;s a manifestation of the world&rsquo;s desire to end, or he is god in the flesh, cast down for whatever reason. That doesn&apos;t matter. What does is that he spells ruin for this whole setup, and it shows the truth that everyone is so busy ignoring: the universe&nbsp;wants&nbsp;to die, and it is being prevented. Through the loops, the anomalies&hellip; you name it.&rdquo;</p>
+      <p><br></p>
+      <p>&ldquo;Hm.&rdquo;&nbsp;</p>
+      <p><br></p>
+      <p>Viktor sways their foot as they consider what she&rsquo;s said, showing neither approval nor disdain in both posture and speech; there is only the ever-marching tick of the nearby clock for company, and she can feel each second weigh on her.</p>
+      <p><br></p>
+      <p>There are no other words to explain it, except that she hates this. Normally, when she talks about her theories, she&rsquo;s met with many reactions: enthusiastic acceptance, pure rejection, and more often, nothing at all. Yet here she is, experiencing the rare yet familiar sensation of still judgment, and for a moment, after all this time, she can feel herself back at the company. Like she&rsquo;s talking about the monster of the week for the fifteenth time, with only Camille&rsquo;s cat smile for company, taking in every word with unspoken gravity.&nbsp;</p>
+      <p><br></p>
+      <p>It&rsquo;s different. Of course it&rsquo;s different, because Viktor is someone else entirely. There are no eyes staring up at her, no warm smile to comfort her; there is only their contemplation. If she didn&rsquo;t know better, she&rsquo;d sooner guess her soul was being weighed for a chance at an afterlife.</p>
+      <p><br></p>
+      <p>But why does she care? Why does some other person&rsquo;s opinion matter so much to her, when she knows that she is right?</p>
+      <p><br></p>
+      <p>She&rsquo;s about to find out.&nbsp;</p>
+      <p><br></p>
+      <p>&ldquo;Tell me, R5. What is your hypothesis?&rdquo;</p>
+      <p><br></p>
+      <p>&ldquo;My&hellip; my hypothesis?&rdquo; Ria looks back at the board with a raised brow. &ldquo;It&rsquo;s a theory. There&rsquo;s not just one hypothesis.&rdquo;<br><br>&ldquo;Ah. I&rsquo;m not being clear.&rdquo; They clear their throat. &ldquo;What I mean is, what are you attempting to communicate? That there are fundamental laws of the world, or that the world needs to die?&rdquo;<br><br>&ldquo;Both. Both are important.&rdquo;<br><br>Viktor clasps their hands. Even though their position does not change, she can&rsquo;t stop her eyes from trailing down to them, as if magnetic in pull. &ldquo;Then separate them. You&rsquo;re muddling your ideas together.&rdquo;&nbsp;</p>
+      <p><br></p>
+      <p>Ria blinks. Twice, even. Where she&rsquo;d expected righteous anger, she only finds confusion. &ldquo;I&hellip; huh?&rdquo;<br><br>&ldquo;Your ideas are not fundamentally flawed. Perhaps this world&nbsp;does&nbsp;need to end; I do not have the knowledge to make that call. But if you were to have handed me this at my job and told me to make the call on it, I would not even bother,&rdquo; they say, raising their index finger to her. &ldquo;I see that you have done your due work, and that you have sources, and this is good. But you need to clear your head, R5. If you don&rsquo;t, no one but you will ever understand this.&rdquo;</p>
+      <p><br></p>
+      <p>&ldquo;Clear&hellip; my head.&rdquo;&nbsp;</p>
+      <p><br></p>
+      <p>The words sit on the back of her throat. They taste somewhat bitter; the weight in her lungs screams that she should be angrier at this, but it doesn&apos;t come to her. Perhaps they did truly weigh her soul. &nbsp;&ldquo;I have worked on this for centuries. I don&rsquo;t know what you want me to do here. I know this better than anyone, and&hellip;&rdquo;</p>
+      <p><br></p>
+      <p>&ldquo;And&nbsp;clearly&nbsp;I&rsquo;ve spent more time formatting reports to be comprehensible by laymen.&rdquo; Viktor smirks. It&rsquo;s more playful than anything, proving their superiority in something so&hellip; trivial. &ldquo;Here&rsquo;s what. Bring me your theory on the World Code first, since it appears to be the building block of your body of work. You know the format.&rdquo; They push themselves with their walker to a standing position. &ldquo;I&rsquo;ll read it over for you, then give it back to you for pointers.&rdquo;</p>
+      <p><br></p>
+      <p>Ria fiddles with her hands, gaze darting between Viktor and the wall. &ldquo;Oh. Okay. Yeah, that could-- that could work.&rdquo;&nbsp;</p>
+      <p><br></p>
+      <p>&ldquo;Excellent. I expect to see it by next week.&rdquo;</p>
+      <p><br></p>
+      <p>Viktor turns to leave. She wants to bid them goodbye like a normal person. But she can&rsquo;t. There&rsquo;s one more question she needs to ask.</p>
+      <p><br></p>
+      <p>&nbsp;&ldquo;Why?&rdquo;<br><br></p>
+      <p>They stop. &ldquo;Hm?&rdquo;<br><br>&ldquo;Oh. Uh-- why help? I don&rsquo;t-- I don&rsquo;t see how that helps you not be part of us, if you hate it so much.&rdquo;</p>
+      <p><br></p>
+      <p>&ldquo;I&rsquo;m not part of your team, R5. I am only promoting good investigative habits,&rdquo; they state, looking back at the wall. &ldquo;And if you are insistent on burning down the world, make sure it is not the last mistake you make. This universe&hellip; has a lot of tricks under its sleeve.&rdquo;</p>
+      <p><br></p>
+      <p>&ldquo;Alright. Yeah. That&hellip; makes sense.&rdquo; She smiles. &ldquo;Thanks.&rdquo;</p>
+      <p><br></p>
+      <p>Viktor nods once, then heads out the door. With that, she&rsquo;s alone again with her thoughts, as she&rsquo;s gotten accustomed to being. Except now she has something else to do; after one hundred years, she has homework again.</p>
+      <p><br></p>
+      <p>She&rsquo;s going to have to fix this whole wall, isn&rsquo;t she?&nbsp;</p>
+      <p><br></p>
+      <p>Ria sighs. Time to get to work.</p>
+    </div>
+
+  </div>
+
+  <div id="cast"></div>
+</body>
+
+</html>
